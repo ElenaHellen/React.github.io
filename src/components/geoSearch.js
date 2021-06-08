@@ -1,27 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Map from "./map"
+import {  Link } from "react-router-dom";
 
-class geoSearch extends React.Component{
-render() {
-  return (
+
+const GeoSearch = () => (
  
-      <div className="App">
-        geoSearch
+      <div >
+       <div> geoSearch</div>
 
-        <Router>
-      
-     <li> <Link to = "/map">Map</Link></li>
-    
-        <Switch>
-          
-          <Route exact path="/map" component={Map}></Route>
-        </Switch>
-      
-      </Router>
+       <Link to = "./map">Map</Link>
       </div>
     
   );
-}
-}
-export default geoSearch;
+
+export default GeoSearch;
+
