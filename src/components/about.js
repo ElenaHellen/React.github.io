@@ -1,24 +1,15 @@
 import React from "react";
 
-import { BrowserRouter as Router, Switch,  Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
-import Contacts from "./contacts";
-
-class About extends React.Component{
-render() {
-  return (
+const About = () => (
  
-      <div className="App">
-        About us
-        <Router>
-        <li><Link to = "/contacts">Contacts</Link></li>
-        <Switch>
-          <Route exact path="/contacts" component={Contacts}></Route>
-        </Switch>
-        </Router>
+      <div >
+        <div>About us</div>
+        <Link to = "./Contacts">Contacts</Link>
+        
       </div>
     
   );
-}
-}
+
 export default About;
