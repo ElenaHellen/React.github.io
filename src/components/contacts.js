@@ -1,23 +1,15 @@
 import React from "react";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import geoSearch from "./geoSearch";
+import { BrowserRouter as  Link } from "react-router-dom";
 
-class Contacts extends React.Component{
-render() {
-  return (
+
+const Contacts = () => (
  
-      <div className="App">
-        Contacts 
-        <Router>
-        <li> <Link to = "/geoSearch">geoSearch</Link></li>
-        <Switch>
-          <Route exact path="/geoSearch" component={geoSearch}></Route>
-        </Switch>
-        </Router>
+      <div >
+        <div>Contacts </div>
+         <Link to = "./geoSearch">geoSearch</Link>
       </div>
     
   );
-}
-}
+
 export default Contacts;
