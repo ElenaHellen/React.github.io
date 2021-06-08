@@ -1,15 +1,17 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 
-class Login extends React.Component{
-render() {
-  return (
+const Login = () => (
  
-      <div className="App">
-        login
-      </div>
+  <div>
+    <div>
+      Login
+    </div>
+    
+    <Link to = "./profile">Profile</Link>
+  </div>
     
   );
-}
-}
+
 export default Login;
